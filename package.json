@@ -1,23 +1,18 @@
 {
-  "dependencies": {
-    "ethereumjs-testrpc": "^4.1.2"
-  },
   "name": "ubx",
-  "description": "#### Simple test of the Ethereum Blockchain",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SovTech/ubx.git"
-  },
-  "author": "Jameel Mukadam <Jameel@JameelMukadam.com> (https://www.JameelMukadam.com)",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SovTech/ubx/issues"
-  },
-  "homepage": "https://github.com/SovTech/ubx#readme"
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 }
