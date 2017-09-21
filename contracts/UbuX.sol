@@ -8,21 +8,9 @@ contract UbuX is StandardToken {
   uint8 public constant decimals = 4;
   uint256 public INITIAL_SUPPLY = 230000000;
 
-  // Owner of this contract
-  address public owner;
-
-  // Functions with this modifier can only be executed by the owner
-  modifier onlyOwner() {
-    if (msg.sender != owner) {
-      throw;
-    }
-    _;
-  }
-
   function UbuX() {
     totalSupply = INITIAL_SUPPLY;
-    owner = msg.sender;
-    balances[owner] = INITIAL_SUPPLY;
+    balances[msg.sender] = INITIAL_SUPPLY;
   }
 
 }
