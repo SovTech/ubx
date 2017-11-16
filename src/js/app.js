@@ -13,7 +13,7 @@ App = {
       web3 = new Web3(web3.currentProvider);
     } else {
       // set the provider you want from Web3.providers
-      App.web3Provider = new web3.providers.HttpProvider('http://localhost:8545');
+      App.web3Provider = Web3.givenProvider;
       web3 = new Web3(App.web3Provider);
     }
 
@@ -28,7 +28,7 @@ App = {
 
       // Set the provider for our contract.
       App.contracts.UbuX.setProvider(App.web3Provider);
-
+      console.log('App.contracts: ', App.contracts)
       // Use our contract to retieve and mark the adopted pets.
       return App.getBalances();
     });
