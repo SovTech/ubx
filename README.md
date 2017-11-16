@@ -1,39 +1,6 @@
-# UBX test repo
+# UBX
 
-#### Simple test of the Ethereum Blockchain
+The UBX is a crypto token offered in an ITO as a means to incentivise and fund the deployment of the UBU ecosystem. There is a mathematical relationship between the UBX and UBU, with ownership of the UBX guaranteeing a future delivery of UBUs to the owner under the governance of this relationship
 
-## How To Run
-
-### Step 1
-
-make sure you have truffle installed `npm install -g truffle`
-make sure you have ethereumjs-testrpc installed `npm install -g ethereumjs-testrpc`
-Make sure you are using Chrome web broser
-Install the MetaMask Chrome plugin: `https://metamask.io/`
-
-### Step 2
-
-run the test rpc: `testrpc`
-
-this will set up a test blockchain locally and create 10 accounts with their private keys each with 100 ETH.
-Pick an account with it's private key and add that account to your meta mask chrome extension. 
-You should then see your 100ETH.
-
-### Step 3
-
-In the project directory, run the following commands (make sure `testrpc` is still running): 
-
---> `truffle compile`
---> `truffle migrate`
-
-this will deploy the contract to your local blockchain
-
-### Step 4
-
-In the project directory, run `yarn dev` or `npm run dev` and this will launch a very basic web page which uses Web3 to interact with your locally running blockchain.
-You should see 230000000UBX on your webpage for your account and you can transfer it to any other address on the network from the list of 10 accounts created when running `testrpc`.
-
-Add 2 or more accounts to your MetaMask chrome extension and start transfering between accounts to see how it works. All transactions can be seen in your MetaMask chrome extension.
-
-
-That's what we currently have working...
+# UBU
+The UBU is a crypto token of exchange that derives its value from unlocking inefficient assets in the current economic system. UBUs are issued on a daily fixed basis to anyone who elects to receive and trade them with participating vendors for goods & services. Every active citizen and vendor contributes to the value and stability of the system just by participating, releasing greater value into the economy which benefits everyone. The extent of this benefit is determined by the level of participation, but obviously people in low income groups derive the greatest relative benefit.
